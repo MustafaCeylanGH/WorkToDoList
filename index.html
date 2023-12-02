@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="main-header">Work To-Do List</h1>
+      </header>
+      <div class="helper-texts">
+        <p class="first-helper-text">
+          Enter text into the input field to add items to your list.
+        </p>
+        <p class="second-helper-text">Click the item to mark it as complete.</p>
+        <p class="third-helper-text">
+          Click the "X" to remove the item from your list.
+        </p>
+      </div>
+      <div class="input-area">
+        <input
+          class="user-input"
+          type="text"
+          placeholder="New item..."
+          maxlength="70"
+        />
+        <button class="input-btn">
+          <ion-icon class="pen-icon" name="pencil-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="list-container">
+        <ul class="to-do-list"></ul>
+      </div>
+      <footer class="footer">
+        <p class="copyright">
+          Copyright &copy; <span class="year">Current year</span> by Mustafa
+          Ceylan, All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
